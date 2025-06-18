@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ff6347; /* tomato red */
+  }
+  
+  form {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  select, button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  select:focus, button:focus {
+    border-color: #ff6347;
+  }
+  
+  button {
+    background-color: #ff6347;
+    color: white;
+    cursor: pointer;
+    border: none;
+    min-width: 130px;
+  }
+  
+  button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  #results {
+    margin-top: 20px;
+    min-height: 250px;
+    position: relative;
+  }
+  
+  .meal-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgb(0 0 0 / 0.1);
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .meal-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .meal-card img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .meal-card h2 {
+    margin: 0 0 10px 0;
+    color: #ff6347;
+  }
+  
+  .meal-card p {
+    margin: 5px 0;
+    font-weight: 500;
+  }
+  
+  .meal-card a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .meal-card a:hover {
+    text-decoration: underline;
+  }
+  
+  #another-btn {
+    margin-top: 15px;
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #another-btn:hover {
+    background-color: #e5533d;
+  }
+  
+  .loading {
+    font-weight: 600;
+    color: #ff6347;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  

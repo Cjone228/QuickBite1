@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QuickBite 🍽️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍽️ QuickBite</h1>
+    <form id="recipe-form">
+      <select id="food-type" required>
+        <option value="" disabled selected>Select a food type...</option>
+        <option value="beef">Beef</option>
+        <option value="chicken">Chicken</option>
+        <option value="pasta">Pasta</option>
+        <option value="seafood">Seafood</option>
+        <option value="vegetarian">Vegetarian</option>
+      </select>
+      <button type="submit" id="search-btn">Search Recipes</button>
+    </form>
+
+    <div id="results"></div>
+    <button id="another-btn" style="display:none;">Another suggestion</button>
+
+    <div id="loading" class="loading" style="display:none;">Loading...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
